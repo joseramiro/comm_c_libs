@@ -1,13 +1,13 @@
-#include <xc.h>
-#include "plib_data_struct.h"
-
 /**
  * @file plib_data_struct.c
  * @brief Définitions types de données et fonctions de manipulation
  * @author Ramiro Najera
- * @version 1.0.0
+ * @version 1.0.1
  * @date 2025-04-23
  */
+
+#include <xc.h>
+#include "plib_data_struct.h"
 
 void Utils_Set_16bits_Flag(unsigned int *variable, unsigned char index)
 {

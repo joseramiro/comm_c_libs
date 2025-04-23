@@ -5,7 +5,7 @@
  * @file plib_data_struct.h
  * @brief Définitions types de données et fonctions de manipulation
  * @author Ramiro Najera
- * @version 1.0.0
+ * @version 1.0.1
  * @date 2025-04-23
  */
 
@@ -55,6 +55,8 @@ union LongUsCharUnion
     unsigned long usLongValue;
     /** @brief Valeur long */
     long longValue;
+    /** @brief Valeur float */
+    float floatValue;
     /** @brief Chaine de char */
     unsigned char usChar[4];
     /** @brief Chaine de int */
