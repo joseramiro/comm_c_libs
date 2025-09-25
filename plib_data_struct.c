@@ -2,27 +2,12 @@
  * @file plib_data_struct.c
  * @brief Définitions types de données et fonctions de manipulation
  * @author Ramiro Najera
- * @version 1.0.2
+ * @version 1.0.3
  * @date 2025-04-23
  */
 
 #include <xc.h>
 #include "plib_data_struct.h"
-
-void Utils_Set_16bits_Flag(unsigned int *variable, unsigned char index)
-{
-    *variable |= (1 << index);
-}
-
-void Utils_Clear_16bits_Flag(unsigned int *variable, unsigned char index)
-{
-    *variable &= ~(1 << index);
-}
-
-unsigned char Utils_Check_16bits_Flag(unsigned int variable, int index)
-{
-    return (variable & (1 << index)) != 0;
-}
 
 unsigned char Utils_Calculate_CRC8_Raw(unsigned char* buffer, unsigned char size)
 {
