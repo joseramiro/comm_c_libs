@@ -6,20 +6,19 @@
  * @date 2025-04-23
  */
 
-#include <xc.h>
 #include "plib_data_struct.h"
 
 unsigned char Utils_Calculate_CRC8_Raw(unsigned char* buffer, unsigned char size)
 {
-    uint8_t crc = 0xff;
-    size_t i, j;
+    unsigned char crc = 0xff;
+    unsigned char i, j;
     for (i = 0; i < size; i++)
     {
         crc ^= buffer[i];
         for (j = 0; j < 8; j++)
         {
             if (crc & 0x80)
-                crc = (uint8_t)((crc << 1) ^ 0x32);
+                crc = (unsigned char)((crc << 1) ^ 0x32);
             else
                 crc <<= 1;
         }
