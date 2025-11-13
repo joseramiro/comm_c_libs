@@ -5,7 +5,7 @@
  * @file plib_state_machine.h
  * @brief Machine d'état générique
  * @author Ramiro Najera
- * @version 1.0.5
+ * @version 1.0.7
  * @date 2025-10-06
  */
 
