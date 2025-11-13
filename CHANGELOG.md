@@ -2,10 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.0.8] - 2025-10-13
+## [1.0.8] - 2025-11-13
 - Modified BoardError struct params
 
-## [1.0.7] - 2025-10-10
+## [1.0.7] - 2025-11-10
 - Added plib_error files
 
 ## [1.0.6] - 2025-10-06
