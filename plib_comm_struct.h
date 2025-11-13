@@ -5,7 +5,7 @@
  * @file plib_comm_struct.h
  * @brief Définitions de structures pour communications
  * @author Ramiro Najera
- * @version 1.0.7
+ * @version 1.0.8
  * @date 2025-04-23
  */
 

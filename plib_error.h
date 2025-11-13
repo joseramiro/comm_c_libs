@@ -5,22 +5,22 @@
  * @file plib_error.h
  * @brief Définitions des erreurs
  * @author Ramiro Najera
- * @version 1.0.7
+ * @version 1.0.8
  * @date 2025-11-07
  */
 
 typedef struct
 {
-    unsigned char error0;
-    unsigned char error1;
-    unsigned char error2;
-    unsigned char error3;
-}ErrorCode_t;
+    unsigned char ioExpanders;
+    unsigned char motorBridges;
+    unsigned char pwmExpanders;
+    unsigned char reserved;
+}BoardErrors_t;
 
 typedef union
 {
-    ErrorCode_t code;
     unsigned long raw;
-}ErrorCodeUnion_t;
+    BoardErrors_t modules;
+}BoardErrorsUnion_t;
 
 #endif  // PLIB_ERROR_H

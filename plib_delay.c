@@ -2,7 +2,7 @@
  * @file plib_delay.c
  * @brief Définitions des fonctions de délai
  * @author Ramiro Najera
- * @version 1.0.7
+ * @version 1.0.8
  * @date 2025-04-23
  */
 
