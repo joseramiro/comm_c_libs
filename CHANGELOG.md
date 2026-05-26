@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.8] - 2026-05-26
+- Modified stata machine to carry out action during transition instead of once in state
+
+## [1.0.7] - 2025-11-7
+- Added error lib
+
 ## [1.0.6] - 2025-10-06
 - Added state machine files
 
