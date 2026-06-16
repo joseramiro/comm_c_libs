@@ -9,17 +9,9 @@
  * @date 2025-04-23
  */
 
+#include <stdint.h>
 #include <stddef.h>
 #include <stdbool.h>
-/** 
- * @enum SPIChannel_t
- * @brief Numéros de channels de communication SPI
- */
-typedef enum
-{
-    SPI_CH1 = 1,  /**< Channel SPI 1 */
-    SPI_CH2 = 2   /**< Channel SPI 2 */
-}SPIChannel_t;
 
 /** 
  * @struct GPIO_t
@@ -39,10 +31,8 @@ typedef struct
  */
 typedef struct
 {
-    /** @brief Channel SPI @ref SPIChannel_t */
-    unsigned char channel;  /**< Channel SPI */
     /** @brief Adresse SPI */
-    unsigned char address;  /**< Adresse SPI */
+    uint8_t address;  /**< Adresse SPI */
     bool (*Write)(void* tx, size_t len);
     bool (*Read)(void* rx, size_t len);
     /** @brief Fonctions pour mettre à jour Chip Select */

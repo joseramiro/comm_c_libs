@@ -9,21 +9,19 @@
 #include <xc.h>
 #include "plib_delay.h"
 
-void Wait100ns(unsigned long ns100)
+void Wait100ns(uint32_t ns100)
 {
-    unsigned long i = 0;
-    for (i = 0; i < ns100; i++)
+    for (uint32_t i = 0; i < ns100; i++)
     {
         asm("nop");
     }
 }
 
-void Wait1us(unsigned long us)
+void Wait1us(uint32_t us)
 {
-    unsigned long i = 0, j = 0;
-    for (i = 0; i < us; i++)
+    for (uint32_t i = 0; i < us; i++)
     {
-        for (j = 0; j < 10; j++)
+        for (uint32_t j = 0; j < 10; j++)
         {
             asm("nop");
         }
@@ -31,7 +29,7 @@ void Wait1us(unsigned long us)
 }
 
 
-unsigned int ResetPIC()
+uint16_t ResetPIC()
 {
     /* Perform a system unlock sequence */
     SYSKEY = 0xaa996655; // write first unlock key to SYSKEY
@@ -39,7 +37,7 @@ unsigned int ResetPIC()
     /* Set SWRST bit to arm reset */
     RSWRSTSET = 1;
     /* Read RSWRST register to trigger reset */
-    unsigned int dummy;
+    uint16_t dummy;
     dummy = RSWRST;
     /* Prevent any unwanted code execution until reset occurs*/
     asm("nop");

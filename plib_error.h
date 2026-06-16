@@ -9,18 +9,20 @@
  * @date 2025-11-07
  */
 
+#include <stdint.h>
+
 typedef struct
 {
-    unsigned char error0;
-    unsigned char error1;
-    unsigned char error2;
-    unsigned char error3;
+    uint8_t error0;
+    uint8_t error1;
+    uint8_t error2;
+    uint8_t error3;
 }ErrorCode_t;
 
 typedef union
 {
     ErrorCode_t code;
-    unsigned long raw;
+    uint32_t raw;
 }ErrorCodeUnion_t;
 
 #endif  // PLIB_ERROR_H

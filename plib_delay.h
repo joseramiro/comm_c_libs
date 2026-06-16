@@ -9,22 +9,24 @@
  * @date 2025-04-23
  */
 
+#include <stdint.h>
+
 /**
  * @brief Fonction de délai en 100 ns
  * @param ns100 100 ns d'attente
  */
-void Wait100ns(unsigned long ns100);
+void Wait100ns(uint32_t ns100);
 
 /**
  * @brief Fonction de délai en µs
  * @param us µs d'attente
  */
-void Wait1us(unsigned long us);
+void Wait1us(uint32_t us);
 
 /**
  * @brief Fonction pour rédemarrer PIC
  * @return unsigned int Lecture de registre reset
  */
-unsigned int ResetPIC();
+uint16_t ResetPIC();
 
 #endif  // PLIB_DELAY_H

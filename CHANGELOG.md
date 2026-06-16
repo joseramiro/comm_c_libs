@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.9] - 2026-06-16
+- Modified variable type to used stdint.h in plib_comm_struct lib
+
 ## [1.0.8] - 2026-05-26
 - Modified stata machine to carry out action during transition instead of once in state
 
