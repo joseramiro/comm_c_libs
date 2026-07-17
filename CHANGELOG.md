@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.10] - 2026-07-17
+- Deleted unued plib_error lib
+- Modified doxygen documentation
+
 ## [1.0.9] - 2026-06-16
 - Modified variable type to used stdint.h in plib_comm_struct lib
 

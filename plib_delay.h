@@ -1,6 +1,3 @@
-#ifndef PLIB_DELAY_H
-#define PLIB_DELAY_H
-
 /**
  * @file plib_delay.h
  * @brief Définitions des fonctions de délai
@@ -8,6 +5,9 @@
  * @version 1.0.7
  * @date 2025-04-23
  */
+
+#ifndef PLIB_DELAY_H
+#define PLIB_DELAY_H
 
 #include <stdint.h>
 
